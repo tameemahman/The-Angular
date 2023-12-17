@@ -1,0 +1,116 @@
+<ngb-carousel *ngIf="popularProducts">
+    <ng-template  *ngFor="let item of popularProducts" ngbSlide>
+      <div class="picsum-img-wrapper">
+        <a routerLink="/details/{{item.id}}"> <img class="product-header-image" src="{{item.image}}" alt="Random first slide">
+     </a>
+        </div>
+      <div class="carousel-caption">
+        <h3>{{item.name}}</h3>
+        <p>{{item.description}}</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+<div class="product-list-wrapper">
+
+  <div class="row text-center g-4">
+    <div class="col-md">
+        <div class="card bg-dark text-light p-5" style="width: 18rem;">
+            <img src="https://homeandbeyond.com.bd/cdn/shop/products/4372973990_1878227147_100x.jpg?v=1599292818" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+                <h5 class="card-title">Baby Blanket</h5>
+                <p class="card-text">Introducing our Hello Baby Blankets, a baby's naptime buddy. Our beautifully designed, bright and colorful blankets are perfect to snuggle and sleep with. 
+
+                </p>
+                <a href="#" class="btn btn-outline-info">View product detail</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-dark text-light p-5" style="width: 18rem;">
+            <img src="https://homeandbeyond.com.bd/cdn/shop/products/8601127061_875805138_720x.jpg?v=1601392331" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Round Fur Throw Rug</h5>
+                <div class="content-box">
+  
+  
+  
+</div>
+                <p class="card-text">Introducing our fur round  throw rugs,  an exceptional decor piece for you home. </p>
+                <a href="#" class="btn btn-outline-info">View product detail</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-dark text-light p-5" style="width: 18rem;">
+            <img src="https://homeandbeyond.com.bd/cdn/shop/products/11636629623_1486955763_1_720x.jpg?v=1599314482" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Signature Plush</h5>
+                <p class="card-text">Add a true touch of opulence in your home from our exclusive gradiance series - part of our signature series. 
+                </p>
+                <a href="#" class="btn btn-outline-info">View product detail</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card bg-dark text-light p-5" style="width: 18rem;">
+            <img src="https://homeandbeyond.com.bd/cdn/shop/products/c44_720x.jpg?v=1641224821" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Knitted Throw Blanket</h5>
+                <p class="card-text">With Winter right around the corner, introducing our delicately crafted Knitted Throw Blanket -A classic knit design that reverses to a fluffy sherpa lining is perfect for keeping you snug and warm. 
+                </p>
+                <a href="#" class="btn btn-outline-info">View product detail</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-dark text-light p-5" style="width: 18rem;">
+            <img src="https://homeandbeyond.com.bd/cdn/shop/products/c17_5060afbb-bb44-4cb9-a235-1cf35c5ffb09_720x.jpg?v=1664634551" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Marbleous Mugs</h5>
+                <p class="card-text">Introducing our Premium line of Mugs made for love, with love. Made of high quality ceramic,each mug pattern is unique.
+
+                </p>
+                <a href="#" class="btn btn-outline-info">View product detail</a>
+            </div>
+        </div>
+    </div><div class="col-md-4">
+        <div class="card bg-dark text-light p-5" style="width: 18rem;">
+            <img src="https://homeandbeyond.com.bd/cdn/shop/products/c3_8994aa9e-dff8-470d-9525-f849a256c414_687x.jpg?v=1601982692" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Urban Luxe</h5>
+                <p class="card-text">Turn any tablescape into something grand with our Gold Montage table runner. Boasting a gold foil print design all over. 
+                </p>
+                <a href="#" class="btn btn-outline-info">View product detail</a>
+            </div>
+        </div>
+    </div>
+</div>
+<h1>Trendy Products</h1>
+<div class="row">
+  <div class="col-sm-3" *ngFor="let item of trendyProducts">
+    <div class="product-item">
+      <img src="{{item.image}}" alt="">
+    <div class="product-details">
+      <h6 class="name-head">{{item.name}}</h6>
+      <div class="product-price">
+        <h6>Price:{{item.price}}</h6>
+      </div>
+      <div class="product-color">
+        <h6>Color:{{item.color}}</h6>
+      </div>
+    </div>
+    <div class="product-footer">
+      <a routerLink="/details/{{item.id}}">View Details</a>
+      <a href="">Add to Cart</a>
+
+    </div>
+    </div>
+  </div>
+
+
+</div>
+</div>
+
+  
+  
